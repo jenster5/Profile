@@ -1,0 +1,5 @@
+- [x] Make bench, microscope, and computer popups readable on mobile without changing iPad layouts.
+- [x] Keep Computer and Bookshelf labels inside the mobile game view.
+- [x] Verify mobile popup content and labels.
+- [x] Match all four mobile popup sizes and restore labels below station images.
+- [x] Verify matching popup bounds and visible mobile labels.
