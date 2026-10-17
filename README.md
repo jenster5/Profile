@@ -1,73 +1,52 @@
-# Welcome to your Lovable project
+# Jennifer Feenstra-Arengård — Portfolio
 
-## Project info
+Interactive portfolio for **Jennifer Feenstra-Arengård**, a full-stack developer with a PhD background in developmental and cancer biology.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The site is meant to be shared with prospective employers. It has two ways in:
 
-## How can I edit this code?
+- A **traditional portfolio** (about, skills, and selected work)
+- An **interactive lab** you can walk through to discover the same story at stations (bench, microscope, computer, lounge)
 
-There are several ways of editing your application.
+I prototyped the first version in [Lovable](https://lovable.dev), then moved the project here to own the codebase, keep iterating, and ship it from GitHub.
 
-**Use Lovable**
+**Live site:** _soon to be found here_  
+**LinkedIn:** [jennifer-feenstra-arengard](https://www.linkedin.com/in/jennifer-feenstra-arengard/)  
+**Email:** [jennifer.feenstra.arengard@gmail.com](mailto:jennifer.feenstra.arengard@gmail.com)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## What’s in the lab
 
-Changes made via Lovable will be committed automatically to this repo.
+Walk the scientist to a station (or tap it on mobile). The character pathfinds around obstacles, then opens that station’s panel:
 
-**Use your preferred IDE**
+| Station            | What it covers                             |
+| ------------------ | ------------------------------------------ |
+| Chemical bench     | Background and research-to-code transition |
+| Microscope         | Skills and how I work                      |
+| Computer           | Selected projects (Partnex, Floccs, CVOOM) |
+| Lounge / bookshelf | Contact and next steps                     |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Visit all four stations to unlock the exit. Layout and popups are built for desktop, tablet, and phone.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Stack
 
-Follow these steps:
+React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Framer Motion, React Router, Vitest.
+
+## Run locally
+
+Requires Node.js and npm.
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Then open the URL Vite prints (usually `http://localhost:8080`).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+npm run build    # production build
+npm run preview  # serve the production build
+npm test         # vitest
+```
 
-**Use GitHub Codespaces**
+## Development notes
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Early UI and structure came from Lovable. Ongoing work happens in this repo.
